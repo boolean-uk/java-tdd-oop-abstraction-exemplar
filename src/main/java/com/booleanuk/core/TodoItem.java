@@ -2,12 +2,12 @@ package com.booleanuk.core;
 
 public class TodoItem {
     private String title;
-    public String detail;
+    private String detail;
     public String status;
 
     public TodoItem(String title, String detail, String status) {
         this.title = title;
-        this.detail = detail;
+        this.setDetail(detail);
         this.status = status;
     }
 
@@ -25,5 +25,13 @@ public class TodoItem {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
     }
 }
