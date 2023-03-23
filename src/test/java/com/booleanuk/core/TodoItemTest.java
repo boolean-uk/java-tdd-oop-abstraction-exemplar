@@ -22,4 +22,11 @@ class TodoItemTest {
         TodoItem todo = new TodoItem("Tidy up", "Tidy up the living room", "Incomplete");
         Assertions.assertEquals("Tidy up", todo.getTitle());
     }
+
+    @Test
+    public void checkSetTitleCorrectlyModifiesStatus() {
+        TodoItem todo = new TodoItem("Tidy up", "Tidy up the living room", "Incomplete");
+        todo.setTitle("Tidy room");
+        Assertions.assertEquals("Tidy room", todo.getTitle());
+    }
 }
