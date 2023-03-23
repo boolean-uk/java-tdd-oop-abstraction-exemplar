@@ -39,7 +39,7 @@ class TodoItemTest {
     @Test
     public void checkSetDetailCorrectlyModifiesDetail() {
         TodoItem todo = new TodoItem("Tidy up", "Tidy up the living room", "Incomplete");
-        todo.setDetail("TTidy the sitting room");
+        todo.setDetail("Tidy the sitting room");
         Assertions.assertEquals("Tidy the sitting room", todo.getDetail());
     }
 }
