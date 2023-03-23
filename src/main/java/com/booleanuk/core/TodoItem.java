@@ -3,12 +3,12 @@ package com.booleanuk.core;
 public class TodoItem {
     private String title;
     private String detail;
-    public String status;
+    private String status;
 
     public TodoItem(String title, String detail, String status) {
-        this.title = title;
+        this.setTitle(title);
         this.setDetail(detail);
-        this.status = status;
+        this.setStatus(status);
     }
 
     public void setStatus(String status) {
