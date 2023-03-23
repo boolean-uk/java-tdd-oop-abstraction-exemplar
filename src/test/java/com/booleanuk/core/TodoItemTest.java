@@ -33,7 +33,7 @@ class TodoItemTest {
     @Test
     public void checkGetDetailCorrectlyReturnsDetail() {
         TodoItem todo = new TodoItem("Tidy up", "Tidy up the living room", "Incomplete");
-        Assertions.assertEquals("Tidy the sitting room", todo.getDetail());
+        Assertions.assertEquals("Tidy up the living room", todo.getDetail());
     }
 
     @Test
