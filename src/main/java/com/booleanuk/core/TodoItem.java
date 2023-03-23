@@ -1,7 +1,7 @@
 package com.booleanuk.core;
 
 public class TodoItem {
-    public String title;
+    private String title;
     public String detail;
     public String status;
 
@@ -17,5 +17,9 @@ public class TodoItem {
 
     public String getStatus() {
         return this.status;
+    }
+
+    public String getTitle() {
+        return title;
     }
 }
